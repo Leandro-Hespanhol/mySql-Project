@@ -1,13 +1,21 @@
 SELECT 
-    MIN(P.valor_plano) AS faturamento_mínimo,
-    MAX(P.valor_plano) AS faturamento_máximo,
-    AVG(P.valor_plano) AS faturamento_medio,
-    SUM(P.valor_plano) AS faturamento_total
- --    CASE
--- 		WHEN P.id_plano = 1 THEN SUM(0) 
---         WHEN P.id_plano = 2 THEN SUM(7.99) 
---         WHEN P.id_plano = 3 THEN SUM(5.99) 
---         WHEN P.id_plano = 4 THEN SUM(6.99)
---     END AS faturamento_total
+    MIN(P.valor_plano) AS faturamento_minimo,
+    MAX(P.valor_plano) AS faturamento_maximo,
+    ROUND(AVG(CASE
+ 		WHEN P.id_plano = 1 THEN 0 
+         WHEN P.id_plano = 2 THEN 7.99
+         WHEN P.id_plano = 3 THEN 5.99
+       WHEN P.id_plano = 4 THEN 6.99
+    END), 2) AS faturamento_medio,
+    SUM(CASE
+ 		WHEN P.id_plano = 1 THEN 0 
+         WHEN P.id_plano = 2 THEN 7.99
+         WHEN P.id_plano = 3 THEN 5.99
+       WHEN P.id_plano = 4 THEN 6.99
+    END) AS faturamento_total
 FROM
-    planos P;
+    planos P
+JOIN usuarios U ON U.id_plano = P.id_plano;
+
+
+
