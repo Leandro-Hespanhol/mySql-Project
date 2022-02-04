@@ -4,7 +4,7 @@
 ## Install and Usage 
 
 
-At the file desafio01.sql you will find the whole code to create the database used on the following query.
+At the file desafio01.sql you will find the code to create the database used on the following query.
 Each query is on each "desafioXX.sql"
 
 ## Core Habilities: DataBase Normalization, mySQL queries.
