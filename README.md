@@ -11,8 +11,8 @@ Each query is on each "desafioXX.sql"
 
 ## Description: 
 
-This project starts with a table noramlization where I had to work logically to create functional tables. 
-The following challenges were about creating diferent queries to extract interesting data.
+This project starts with a table normalization where I had to work logically to create functional tables. 
+The challenges that follows are about creating diferent queries to extract interesting data.
 
 ## Show your support
 
