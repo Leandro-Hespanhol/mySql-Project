@@ -1,3 +1,5 @@
+-- Desafio 1 - Normalize as tabelas para a 3ª Forma Normal e monte o banco de dados
+
 DROP DATABASE IF EXISTS SpotifyClone;
 
 CREATE DATABASE IF NOT EXISTS SpotifyClone;

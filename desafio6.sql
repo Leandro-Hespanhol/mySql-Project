@@ -1,3 +1,9 @@
+-- Desafio 6 - Acerca dos planos, exiba 4 colunas com: 
+--1º) Faturamento_minimo
+--2º) faturamento_maximo
+--3º) faturamento_medio
+--4º) Faturamento total
+
 SELECT 
     MIN(P.valor_plano) AS faturamento_minimo,
     MAX(P.valor_plano) AS faturamento_maximo,

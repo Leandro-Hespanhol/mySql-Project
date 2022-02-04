@@ -1,3 +1,4 @@
+-- Desafio 10 - Exiba quantidade de reproduções de cada música
 SELECT 
     rep.historico_de_reproducoes AS nome,
     COUNT(rep.id_musica) AS reproducoes

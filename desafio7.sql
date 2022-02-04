@@ -1,3 +1,4 @@
+-- Desafio 7 - Exiba todos os albuns produzidos informando o artista e a quantidade de seguidores do artista.
 SELECT 
     SEG.seguindo_artistas AS artistas,
     ALB.album,

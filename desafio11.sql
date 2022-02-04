@@ -1,3 +1,10 @@
+-- Desafio 11 - Troque os nomes de algumas músicas da seguinte forma:
+-- 1)Trocar a palavra "Streets" no final do nome de uma música por "Code Review"
+-- 2)Trocar a palavra "Her Own" no final do nome de uma música por "Trybe"
+-- 3)Trocar a palavra "Inner Fire" no final do nome de uma música por "Project"
+-- 4)Trocar a palavra "Silly" no final do nome de uma música por "Nice"
+-- 5)Trocar a palavra "Circus" no final do nome de uma música por "Pull Request"
+
 SELECT 
     musica AS nome_musica,
     REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(musica,

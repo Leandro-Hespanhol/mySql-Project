@@ -1,3 +1,5 @@
+-- Desafio 4 - Liste os usuários e exiba-os como inativos caso não tenham escutado música após 2021
+
 SELECT 
     u.usuario,
     CASE
